@@ -4,7 +4,7 @@ import pytest
 
 
 @pytest.fixture(scope="session", autouse=True)
-def window_size(request):
+def window_size():
     browser.config.window_height = 500
     browser.config.window_width = 1000
 
